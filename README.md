@@ -55,11 +55,13 @@ The model was evaluated on a held-out test set of 1,024 slices. We achieved robu
 
 ```bash
 pip install torch torchvision monai pandas numpy matplotlib scikit-image tqdm
+```bash
 
 ### 2. Data Preparation
 We simulate low-dose data using binomial thinning on high-dose acquisitions. Run the simulation notebook to generate paired data:
 ```bash
 jupyter notebook notebooks/01_Data_Simulation.ipynb
+
 
 
 
