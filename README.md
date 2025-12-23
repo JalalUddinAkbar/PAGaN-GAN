@@ -15,7 +15,7 @@ Positron Emission Tomography (PET) is a cornerstone imaging modality for oncolog
 **PAGaN-GAN** is a novel deep learning framework designed to solve the critical trade-off between **noise suppression** and **structure preservation**. Unlike standard U-Nets (which over-smooth lesions) or conventional GANs (which hallucinate artifacts), PAGaN uses a **Gated Dual-Path** mechanism to explicitly disentangle quantum noise from biological texture.
 
 <p align="center">
-  <img src="assets/results_2perc.png" alt="PAGaN Results at 2% Dose" width="800"/>
+  <img src="assets/reconresult.png" alt="PAGaN Results at 2% Dose" width="800"/>
   <br>
   <em>Figure 1: Reconstruction results. The PAGaN model (Center) successfully recovers lesion contrast from the noisy 2% input (Left), matching the Full-Dose Ground Truth (Right).</em>
 </p>
@@ -30,7 +30,7 @@ Positron Emission Tomography (PET) is a cornerstone imaging modality for oncolog
 The generator is a U-Net variant enhanced with **Gated Dual-Path Blocks (GDP)** and **Attention Gates**. The discriminator is a patch-based conditional GAN (PatchGAN) that enforces high-frequency texture consistency.
 
 <p align="center">
-  <img src="assets/architecture.png" alt="Model Architecture" width="800"/>
+  <img src="assets/FigFin.jpg" alt="Model Architecture" width="800"/>
   <br>
   <em>Figure 2: The PAGaN-GAN architecture showing the Gated Dual-Path blocks and Attention mechanism.</em>
 </p>
@@ -56,3 +56,4 @@ The model was evaluated on a held-out test set of 1,024 slices. We achieved robu
 
 ```bash
 pip install torch torchvision monai pandas numpy matplotlib scikit-image tqdm
+
