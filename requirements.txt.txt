@@ -1,0 +1,9 @@
+torch
+torchvision
+monai
+pandas
+numpy
+matplotlib
+tqdm
+scikit-image
+jupyter
