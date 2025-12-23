@@ -24,7 +24,6 @@ Positron Emission Tomography (PET) is a cornerstone imaging modality for oncolog
 * **Physics-Aware Data Simulation:** Utilizes **Binomial Thinning** to model true Poisson photon starvation, ensuring the model learns clinically realistic noise characteristics rather than generic Gaussian noise.
 * **Gated Dual-Path Architecture:** A custom neural block that splits processing into a **Smoothing Path** (for quantum noise) and a **Detail Path** (for anatomy), dynamically weighted by a learned Sigmoid Gate.
 * **Attention Gates:** Integrated into skip connections to filter background noise propagation from the encoder to the decoder.
-* **Clinical Reliability:** Achieves **<5% SUV Bias**, ensuring accurate quantitative metabolic analysis for cancer diagnosis even at 98% dose reduction.
 
 ## 🏗️ Architecture
 The generator is a U-Net variant enhanced with **Gated Dual-Path Blocks (GDP)** and **Attention Gates**. The discriminator is a patch-based conditional GAN (PatchGAN) that enforces high-frequency texture consistency.
@@ -56,4 +55,5 @@ The model was evaluated on a held-out test set of 1,024 slices. We achieved robu
 
 ```bash
 pip install torch torchvision monai pandas numpy matplotlib scikit-image tqdm
+
 
