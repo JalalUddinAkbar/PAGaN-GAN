@@ -56,4 +56,40 @@ The model was evaluated on a held-out test set of 1,024 slices. We achieved robu
 ```bash
 pip install torch torchvision monai pandas numpy matplotlib scikit-image tqdm
 
+## 2. Data Preparation
+We simulate low-dose data using binomial thinning on high-dose acquisitions. Run the simulation notebook to generate paired data:
+
+```bash
+jupyter notebook notebooks/01_Data_Simulation.ipynb
+
+## 3. Training
+To train the PAGaN model using the paired dataset:
+
+```bash
+jupyter notebook notebooks/02_Train_PAGaN.ipynb
+# Input: 2-Channel Tensor (Noisy Image + Alpha/Dose Map)
+# Loss Function: L1 Loss + Perceptual Loss (VGG) + Adversarial Loss
+
+📂 Project Structure
+
+PAGaN-GAN/
+│
+├── assets/                 # Images for README (results, diagrams)
+├── data/                   # Train/Val/Test CSV splits
+├── notebooks/              # Jupyter Notebooks
+│   ├── 01_Data_Simulation.ipynb   # Binomial thinning logic
+│   └── 02_Train_PAGaN.ipynb        # Model training loop
+├── weights/                # Pre-trained model checkpoints
+├── results/                # Output metrics and evaluation logs
+├── LICENSE
+└── README.md
+
+🤝 Acknowledgements
+Principal Investigator: Prof. Jyh-Cheng Chen
+
+Institution: National Yang Ming Chiao Tung University (TEEP Program)
+
+Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
+
+This project was developed as part of the TEEP Research Internship (2025).
 
