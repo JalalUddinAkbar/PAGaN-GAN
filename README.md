@@ -58,18 +58,9 @@ pip install torch torchvision monai pandas numpy matplotlib scikit-image tqdm
 
 ### 2. Data Preparation
 We simulate low-dose data using binomial thinning on high-dose acquisitions. Run the simulation notebook to generate paired data:
-
 ```bash
 jupyter notebook notebooks/01_Data_Simulation.ipynb
 
 
-### 3. Training
-To train the PAGaN model using the paired dataset:
 
-```bash
-jupyter notebook notebooks/02_Train_PAGaN.ipynb
-
-
-# Input: 2-Channel Tensor (Noisy Image + Alpha/Dose Map)
-# Loss Function: L1 Loss + Perceptual Loss (VGG) + Adversarial Loss
 
