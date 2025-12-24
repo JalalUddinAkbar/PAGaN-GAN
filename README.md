@@ -10,7 +10,7 @@
 ---
 
 ## 📌 Abstract
-Positron Emission Tomography (PET) is a cornerstone imaging modality for oncology, but radiation risks necessitate minimizing the injected radiotracer dose. Reducing the dose to **2% of standard protocols** results in severe photon starvation (Poisson noise), often rendering images non-diagnostic.
+Positron Emission Tomography (PET) is a cornerstone imaging modality for oncology, but radiation risks necessitate minimizing the injected radiotracer dose. Reducing the dose to **1% of standard protocols** results in severe photon starvation (Poisson noise), often rendering images non-diagnostic.
 
 **PAGAN** is a novel deep learning framework designed to solve the critical trade-off between **noise suppression** and **structure preservation**. Unlike standard U-Nets (which over-smooth lesions) or conventional GANs (which hallucinate artifacts), PAGaN uses a **Gated Dual-Path** mechanism to explicitly disentangle quantum noise from biological texture.
 
@@ -112,6 +112,7 @@ Institution: National Yang Ming Chiao Tung University (TEEP Program)
 Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
 
 This project was developed as part of the TEEP Research Internship (2025).
+
 
 
 
