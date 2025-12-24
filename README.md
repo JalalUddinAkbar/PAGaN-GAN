@@ -82,8 +82,8 @@ jupyter notebook notebooks/02_Train_PAGaN.ipynb
 ```
 
 
-Input: 2-Channel Tensor (Noisy Image + Alpha/Dose Map)
-Loss Function: L1 Loss + Perceptual Loss (VGG) + Adversarial Loss
+* **Input:** 2-Channel Tensor (Noisy Image + Alpha/Dose Map)
+* **Loss Function:** L1 Loss + Perceptual Loss (VGG) + Adversarial Loss
 
 ## 📂 Project Structure
 
@@ -100,6 +100,8 @@ PAGaN-GAN/
 ├── LICENSE
 └── README.md
 
+```
+
 
 ##🤝 Acknowledgements
 
@@ -110,6 +112,7 @@ PAGaN-GAN/
 #Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
 
 This project was developed as part of the TEEP Research Internship (2025).
+
 
 
 
