@@ -1,4 +1,4 @@
-# PAGaN-GAN: Physics-Aware Gated Dual-Path Attention Network for Ultra-Low-Dose PET Denoising
+# PAGAN: Physics-Aware Gated Dual-Path Attention Network for Ultra-Low-Dose PET Denoising
 
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Medical AI](https://img.shields.io/badge/Medical_AI-Research-blue?style=for-the-badge)
@@ -12,7 +12,7 @@
 ## 📌 Abstract
 Positron Emission Tomography (PET) is a cornerstone imaging modality for oncology, but radiation risks necessitate minimizing the injected radiotracer dose. Reducing the dose to **2% of standard protocols** results in severe photon starvation (Poisson noise), often rendering images non-diagnostic.
 
-**PAGaN-GAN** is a novel deep learning framework designed to solve the critical trade-off between **noise suppression** and **structure preservation**. Unlike standard U-Nets (which over-smooth lesions) or conventional GANs (which hallucinate artifacts), PAGaN uses a **Gated Dual-Path** mechanism to explicitly disentangle quantum noise from biological texture.
+**PAGAN** is a novel deep learning framework designed to solve the critical trade-off between **noise suppression** and **structure preservation**. Unlike standard U-Nets (which over-smooth lesions) or conventional GANs (which hallucinate artifacts), PAGaN uses a **Gated Dual-Path** mechanism to explicitly disentangle quantum noise from biological texture.
 
 <p align="center">
   <img src="assets/reconresult.png" alt="PAGaN Results at 2% Dose" width="800"/>
@@ -31,7 +31,7 @@ The generator is a U-Net variant enhanced with **Gated Dual-Path Blocks (GDP)** 
 <p align="center">
   <img src="assets/FigFin.jpg" alt="Model Architecture" width="800"/>
   <br>
-  <em>Figure 2: The PAGaN-GAN architecture showing the Gated Dual-Path blocks and Attention mechanism.</em>
+  <em>Figure 2: The PAGAN architecture showing the Gated Dual-Path blocks and Attention mechanism.</em>
 </p>
 
 ## 📊 Results
@@ -43,7 +43,7 @@ The model was evaluated on a held-out test set of 1,024 slices. We achieved robu
 | **2% Dose (Target)** | **26.30** | **0.78** | **0.0532** |
 | **1% Dose (Extreme)** | 24.78 | 0.76 | 0.0628 |
 
-> **Qualitative Validation:** Line profile analysis confirms that PAGaN-GAN preserves the sharp intensity peaks of lesions, whereas the low-dose input suffers from significant contrast loss.
+> **Qualitative Validation:** Line profile analysis confirms that PAGAN preserves the sharp intensity peaks of lesions, whereas the low-dose input suffers from significant contrast loss.
 
 ## 💻 Installation & Usage
 
@@ -88,7 +88,7 @@ jupyter notebook notebooks/02_Train_PAGaN.ipynb
 ## 📂 Project Structure
 
 ```text
-PAGaN-GAN/
+PAGAN/
 │
 ├── assets/                 # Images for README (results, diagrams)
 ├── data/                   # Train/Val/Test CSV splits
@@ -112,6 +112,7 @@ Institution: National Yang Ming Chiao Tung University (TEEP Program)
 Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
 
 This project was developed as part of the TEEP Research Internship (2025).
+
 
 
 
