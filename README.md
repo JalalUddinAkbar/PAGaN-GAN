@@ -103,15 +103,16 @@ PAGaN-GAN/
 ```
 
 
-##🤝 Acknowledgements
+## 🤝 Acknowledgements
 
-#Principal Investigator: Prof. Jyh-Cheng Chen
+# Principal Investigator: Prof. Jyh-Cheng Chen
 
-#Institution: National Yang Ming Chiao Tung University (TEEP Program)
+# Institution: National Yang Ming Chiao Tung University (TEEP Program)
 
-#Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
+# Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
 
 This project was developed as part of the TEEP Research Internship (2025).
+
 
 
 
