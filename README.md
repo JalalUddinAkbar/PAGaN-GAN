@@ -17,7 +17,7 @@ Positron Emission Tomography (PET) is a cornerstone imaging modality for oncolog
 <p align="center">
   <img src="assets/reconresult.png" alt="PAGaN Results at 2% Dose" width="800"/>
   <br>
-  <em>Figure 1: Reconstruction results. The PAGaN model (Center) successfully recovers lesion contrast from the noisy 2% input (Left), matching the Full-Dose Ground Truth (Right).</em>
+  <em>Figure 1: The PAGaN model successfully recovers lesion contrast from the noisy input (Left), matching the Full-Dose Ground Truth (Right).</em>
 </p>
 
 ## 🚀 Key Features
@@ -112,6 +112,7 @@ Institution: National Yang Ming Chiao Tung University (TEEP Program)
 Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
 
 This project was developed as part of the TEEP Research Internship (2025).
+
 
 
 
