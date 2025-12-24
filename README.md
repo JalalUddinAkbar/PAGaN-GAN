@@ -5,7 +5,7 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 
-> **Recovering diagnostic-quality PET images from 2% ultra-low-dose data using physics-aware deep learning.**
+> **Recovering diagnostic-quality PET images from 1% ultra-low-dose data using physics-aware deep learning.**
 
 ---
 
@@ -112,6 +112,7 @@ Institution: National Yang Ming Chiao Tung University (TEEP Program)
 Equipment: Data acquired using Bruker 7T PET/MRI Scanner.
 
 This project was developed as part of the TEEP Research Internship (2025).
+
 
 
 
